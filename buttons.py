@@ -14,15 +14,15 @@ def get_main_keyboard():
 
 def get_pdf_button():
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton("📄 Скачать чек-лист", callback_data="get_pdf"))
+    markup.add(types.InlineKeyboardButton("📄 Скачать Чек-лист", callback_data="get_pdf"))
     return markup
 
 def get_automatic_keyboard():
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     btn_office = types.KeyboardButton("🖥Цифровая экосистема под ключ")
     btn_crm = types.KeyboardButton("🗂CRM")
-    btn_mapp = types.KeyboardButton("🌐Telegram bot & Mini app")
-    btn_integr = types.KeyboardButton("🔃Интеграции")
+    btn_mapp = types.KeyboardButton("🤖Telegram bot & Mini app")
+    btn_integr = types.KeyboardButton("🔑Интеграции")
     btn_back = types.KeyboardButton("🔺Назад")
     
     keyboard.add(btn_office, btn_crm, btn_mapp, btn_integr, btn_back)
@@ -41,10 +41,10 @@ def get_services_keyboard():
 
 def get_consulting_keyboard():
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    btn_con = types.KeyboardButton("Консультации")
-    btn_audit = types.KeyboardButton("Глубинный аудит")
-    btn_stsess = types.KeyboardButton("Стратегические сессии")
-    btn_wow = types.KeyboardButton("WOW-сервис")
+    btn_con = types.KeyboardButton("☎️Консультации")
+    btn_audit = types.KeyboardButton("🔎Глубинный аудит")
+    btn_stsess = types.KeyboardButton("👥Стратегические сессии")
+    btn_wow = types.KeyboardButton("🪄WOW-сервис")
     btn_back = types.KeyboardButton("🔺Назад")    
     
     keyboard.add(btn_con, btn_audit)
