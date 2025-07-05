@@ -55,8 +55,9 @@ shirokayads@gmail.com""")
     # Добавляем отправку сообщения с inline-кнопкой
     bot.send_message(
         message.chat.id,
-        "Хотите получить Чек-лист 70 ошибок руководителя?☄️ ",
-        reply_markup=buttons.get_pdf_button()
+        "Хотите получить <b>Чек-лист 70 ошибок руководителя?</b>☄️ ",
+        reply_markup=buttons.get_pdf_button(),
+        parse_mode = 'HTML'
     )
 
 @bot.callback_query_handler(func=lambda call: call.data == "get_pdf")
